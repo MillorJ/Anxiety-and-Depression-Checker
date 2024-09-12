@@ -38,3 +38,6 @@ if (totalScore <= 7) {
     resultText = 'Your responses suggest minimal anxiety and depression. If you have concerns, consider talking to a healthcare professional.';
 } else if (totalScore <= 14) {
     resultText = 'You might be experiencing mild anxiety and depression. It could be helpful to seek support from a mental health professional.';
+} else {
+    resultText = 'You are showing signs of significant anxiety and depression. It is important to reach out to a mental health professional for further evaluation and support.';
+}
