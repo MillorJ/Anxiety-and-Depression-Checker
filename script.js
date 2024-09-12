@@ -11,3 +11,6 @@ document.getElementById(`section${currentSection}`).classList.add('hidden');
 
 document.getElementById(`section${sectionNumber}`).classList.remove('hidden');
 document.getElementById(`section${sectionNumber}`).classList.add('active');
+
+currentSection = sectionNumber;
+}
