@@ -41,3 +41,4 @@ h1 {
 
 .question-section.active {
     opacity: 1;
+    transform: translateX(0);
