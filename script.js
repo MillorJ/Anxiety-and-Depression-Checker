@@ -41,3 +41,8 @@ if (totalScore <= 7) {
 } else {
     resultText = 'You are showing signs of significant anxiety and depression. It is important to reach out to a mental health professional for further evaluation and support.';
 }
+
+
+document.getElementById('result').textContent = resultText;
+    showSection(1); // Reset to the first section
+});
