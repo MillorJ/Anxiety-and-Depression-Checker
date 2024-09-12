@@ -41,6 +41,12 @@ document.getElementById('assessmentForm').addEventListener('submit', function(e)
         resultText = "Your results suggest moderate anxiety and depression.";
     } else {
         resultText = "Your results suggest severe anxiety and depression. Consider seeking professional help.";
+        resultText += "\n\nHere are some tips that might help:\n";
+        resultText += "1. Talk to a mental health professional for personalized support.\n";
+        resultText += "2. Reach out to friends or family for emotional support.\n";
+        resultText += "3. Practice relaxation techniques such as meditation or deep breathing exercises.\n";
+        resultText += "4. Engage in regular physical activity and maintain a healthy lifestyle.\n";
+        resultText += "5. Keep a journal to track your thoughts and feelings.";
     }
 
     // Display result
