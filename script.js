@@ -31,3 +31,6 @@ document.getElementById('assessmentForm').addEventListener('submit', function(e)
 
 // Calculate total score
 const totalScore = responses.reduce((acc, curr) => acc + curr, 0);
+
+// Determine result based on score
+let resultText = '';
