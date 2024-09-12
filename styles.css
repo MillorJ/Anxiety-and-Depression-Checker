@@ -1,8 +1,8 @@
 /* styles.css */
 body {
     font-family: Arial, sans-serif;
-    background-color: #000;
-    color: #fff;
+    background-color: #f0f0f0;
+    color: #333;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -11,37 +11,34 @@ body {
 }
 
 .container {
-    background: #222;
+    background: #fff;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
     width: 100%;
-    max-width: 700px;
+    max-width: 800px;
     position: relative;
-    overflow: hidden;
-
 }
 
 h1 {
     text-align: center;
-    color: #fff;
+    color: #4CAF50;
     margin-bottom: 20px;
 }
 
-.question-section {
-    position: absolute;
-    width: 100%;
-    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+.question-wrapper {
+    max-height: 400px; /* Set maximum height for scrolling */
+    overflow-y: auto; /* Enable vertical scrolling */
 }
 
-.question-section.hidden {
+.question-section {
+    margin-bottom: 20px;
     opacity: 0;
-    transform: translateX(100%);
+    transition: opacity 0.5s ease-in-out;
 }
 
 .question-section.active {
     opacity: 1;
-    transform: translateX(0);
 }
 
 .question {
@@ -51,44 +48,59 @@ h1 {
 label {
     display: block;
     margin-bottom: 10px;
-    color: #ddd;
+    font-weight: bold;
+    color: #555;
 }
 
 select {
     width: 100%;
     padding: 10px;
     border-radius: 5px;
-    border: 1px solid #444;
-    background: #333;
-    color: #fff;
+    border: 1px solid #ccc;
+    background: #f9f9f9;
+    color: #333;
 }
 
 button {
     padding: 12px;
     border: none;
     border-radius: 5px;
-    background-color: #444;
-    color: #fff;
     font-size: 16px;
     cursor: pointer;
     margin-top: 10px;
-
+    transition: background-color 0.3s ease;
 }
 
-button:hover {
-    background-color: #555;
+.next-btn {
+    background-color: #4CAF50;
+    color: #fff;
+}
+
+.next-btn:hover {
+    background-color: #45a049;
+}
+
+.prev-btn {
+    background-color: #f44336;
+    color: #fff;
+}
+
+.prev-btn:hover {
+    background-color: #e53935;
 }
 
 .submit-btn {
-    background-color: #007bff;
+    background-color: #2196F3;
+    color: #fff;
 }
 
 .submit-btn:hover {
-    background-color: #0056b3;
+    background-color: #1e88e5;
 }
 
 .result {
     margin-top: 20px;
     font-size: 18px;
-    color: #fff;
+    color: #333;
+    text-align: center;
 }
