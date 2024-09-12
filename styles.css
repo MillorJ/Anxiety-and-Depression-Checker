@@ -82,3 +82,7 @@ button:hover {
 .submit-btn {
     background-color: #007bff;
 }
+
+.submit-btn:hover {
+    background-color: #0056b3;
+}
