@@ -17,3 +17,14 @@ currentSection = sectionNumber;
 
 document.getElementById('assessmentForm').addEventListener('submit', function(e) {
     e.preventDefault();
+
+        // Get user responses
+        const responses = [
+            parseInt(document.getElementById('q1').value),
+            parseInt(document.getElementById('q2').value),
+            parseInt(document.getElementById('q3').value),
+            parseInt(document.getElementById('q4').value),
+            parseInt(document.getElementById('q5').value),
+            parseInt(document.getElementById('q6').value),
+            parseInt(document.getElementById('q7').value),
+        ];
