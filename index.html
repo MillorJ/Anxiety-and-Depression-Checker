@@ -6,84 +6,95 @@
     <title>Anxiety and Depression Checker</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body></body>
+<body>
     <div class="container">
         <h1>Anxiety and Depression Checker</h1>
-        <form id="assessmentForm"></form>
-            <div class="question-section" id="section1">
-                <div class="question">
-                    <label for="q1">How often have you felt nervous, anxious, or on edge?</label>
-                    <select id="q1" name="q1" required>
-                        <option value="">Select an option</option>
-                        <option value="0">Not at all</option>
-                        <option value="1">Several days</option>
-                        <option value="2">More than half the days</option>
-                        <option value="3">Nearly every day</option>
-                    </select>
+        <form id="assessmentForm">
+            <div class="question-wrapper">
+                <div class="question-section" id="section1">
+                    <div class="question">
+                        <label for="q1">How often have you felt nervous, anxious, or on edge?</label>
+                        <select id="q1" name="q1" required>
+                            <option value="">Select an option</option>
+                            <option value="0">Not at all</option>
+                            <option value="1">Several days</option>
+                            <option value="2">More than half the days</option>
+                            <option value="3">Nearly every day</option>
+                        </select>
+                    </div>
+                    <div class="question">
+                        <label for="q2">How often have you felt down, depressed, or hopeless?</label>
+                        <select id="q2" name="q2" required>
+                            <option value="">Select an option</option>
+                            <option value="0">Not at all</option>
+                            <option value="1">Several days</option>
+                            <option value="2">More than half the days</option>
+                            <option value="3">Nearly every day</option>
+                        </select>
+                    </div>
+                    <button type="button" class="next-btn" onclick="showSection(2)">Next</button>
                 </div>
-                <div class="question">
-                    <label for="q2">How often have you felt down, depressed, or hopeless?</label>
-                    <select id="q2" name="q2" required>
-                        <option value="">Select an option</option>
-                        <option value="0">Not at all</option>
-                        <option value="1">Several days</option>
-                        <option value="2">More than half the days</option>
-                        <option value="3">Nearly every day</option>
-                    </select>
-                </div>
-                <button type="button" class="next-btn" onclick="showSection(2)">Next</button>
-            </div>
 
-            <div class="question-section" id="section2"></div>
-                <div class="question">
-                    <label for="q3">How often have you had trouble relaxing?</label>
-                    <select id="q3" name="q3" required></select>
-                        <option value="">Select an option</option>
-                        <option value="0">Not at all</option>
-                        <option value="1">Several days</option>
-                        <option value="2">More than half the days</option>
-                        <option value="3">Nearly every day</option>
-                    </select>
+                <div class="question-section" id="section2">
+                    <div class="question">
+                        <label for="q3">How often have you had trouble relaxing?</label>
+                        <select id="q3" name="q3" required>
+                            <option value="">Select an option</option>
+                            <option value="0">Not at all</option>
+                            <option value="1">Several days</option>
+                            <option value="2">More than half the days</option>
+                            <option value="3">Nearly every day</option>
+                        </select>
+                    </div>
+                    <div class="question">
+                        <label for="q4">How often have you felt fatigued or low in energy?</label>
+                        <select id="q4" name="q4" required>
+                            <option value="">Select an option</option>
+                            <option value="0">Not at all</option>
+                            <option value="1">Several days</option>
+                            <option value="2">More than half the days</option>
+                            <option value="3">Nearly every day</option>
+                        </select>
+                    </div>
+                    <button type="button" class="prev-btn" onclick="showSection(1)">Previous</button>
+                    <button type="button" class="next-btn" onclick="showSection(3)">Next</button>
                 </div>
-                <button type="button" class="prev-btn" onclick="showSection(1)">Previous</button>
-                <button type="button" class="next-btn" onclick="showSection(3)">Next</button>
-            </div>
 
-            <div class="question-section" id="section3"></div>
-                <div class="question">
-                    <label for="q5">How often have you experienced trouble concentrating on things?</label>
-                    <select id="q5" name="q5" required>
-                        <option value="">Select an option</option>
-                        <option value="0">Not at all</option>
-                        <option value="1">Several days</option>
-                        <option value="2">More than half the days</option>
-                        <option value="3">Nearly every day</option>
-                    </select>
+                <div class="question-section" id="section3">
+                    <div class="question">
+                        <label for="q5">How often have you experienced trouble concentrating on things?</label>
+                        <select id="q5" name="q5" required>
+                            <option value="">Select an option</option>
+                            <option value="0">Not at all</option>
+                            <option value="1">Several days</option>
+                            <option value="2">More than half the days</option>
+                            <option value="3">Nearly every day</option>
+                        </select>
+                    </div>
+                    <div class="question">
+                        <label for="q6">How often have you felt irritable or angry?</label>
+                        <select id="q6" name="q6" required>
+                            <option value="">Select an option</option>
+                            <option value="0">Not at all</option>
+                            <option value="1">Several days</option>
+                            <option value="2">More than half the days</option>
+                            <option value="3">Nearly every day</option>
+                        </select>
+                    </div>
+                    <div class="question">
+                        <label for="q7">How often have you had difficulty sleeping or experienced changes in sleep patterns?</label>
+                        <select id="q7" name="q7" required>
+                            <option value="">Select an option</option>
+                            <option value="0">Not at all</option>
+                            <option value="1">Several days</option>
+                            <option value="2">More than half the days</option>
+                            <option value="3">Nearly every day</option>
+                        </select>
+                    </div>
+                    <button type="button" class="prev-btn" onclick="showSection(2)">Previous</button>
+                    <button type="submit" class="submit-btn">Submit</button>
                 </div>
-                <div class="question">
-                    <label for="q6">How often have you felt irritable or angry?</label>
-                    <select id="q6" name="q6" required>
-                        <option value="">Select an option</option>
-                        <option value="0">Not at all</option>
-                        <option value="1">Several days</option>
-                        <option value="2">More than half the days</option>
-                        <option value="3">Nearly every day</option>
-                    </select>
-                </div>
-                <div class="question">
-                    <label for="q7">How often have you had difficulty sleeping or experienced changes in sleep patterns?</label>
-                    <select id="q7" name="q7" required>
-                        <option value="">Select an option</option>
-                        <option value="0">Not at all</option>
-                        <option value="1">Several days</option>
-                        <option value="2">More than half the days</option>
-                        <option value="3">Nearly every day</option>
-                    </select>    
-                </div>
-                <button type="button" class="prev-btn" onclick="showSection(2)">Previous</button>
-                <button type="submit" class="submit-btn">Submit</button>
             </div>
-
         </form>
         <div id="result" class="result"></div>
     </div>
