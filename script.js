@@ -34,8 +34,3 @@ document.getElementById('assessmentForm').addEventListener('submit', function(e)
     const totalScore = responses.reduce((acc, curr) => acc + curr, 0);
 
     // Determine result based on score
-    let resultText = '';
-    if (totalScore <= 7) {
-        resultText = 'Your responses suggest minimal anxiety and depression. If you have concerns, consider talking to a healthcare professional.';
-    } else if (totalScore <= 14) {
-        resultText = 'You might be experiencing mild anxiety and depression.
