@@ -86,3 +86,9 @@ button:hover {
 .submit-btn:hover {
     background-color: #0056b3;
 }
+
+.result {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #fff;
+}
