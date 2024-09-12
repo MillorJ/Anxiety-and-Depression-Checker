@@ -28,3 +28,6 @@ document.getElementById('assessmentForm').addEventListener('submit', function(e)
             parseInt(document.getElementById('q6').value),
             parseInt(document.getElementById('q7').value),
         ];
+
+// Calculate total score
+const totalScore = responses.reduce((acc, curr) => acc + curr, 0);
