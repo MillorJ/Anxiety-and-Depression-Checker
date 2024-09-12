@@ -34,3 +34,15 @@ document.getElementById('assessmentForm').addEventListener('submit', function(e)
     const totalScore = responses.reduce((acc, curr) => acc + curr, 0);
 
     // Determine result based on score
+    let resultText;
+    if (totalScore <= 6) {
+        resultText = "Your results suggest minimal anxiety and depression.";
+    } else if (totalScore <= 12) {
+        resultText = "Your results suggest moderate anxiety and depression.";
+    } else {
+        resultText = "Your results suggest severe anxiety and depression. Consider seeking professional help.";
+    }
+
+    // Display result
+    document.getElementById('result').innerText = resultText;
+});
