@@ -14,3 +14,6 @@ document.getElementById(`section${sectionNumber}`).classList.add('active');
 
 currentSection = sectionNumber;
 }
+
+document.getElementById('assessmentForm').addEventListener('submit', function(e) {
+    e.preventDefault();
